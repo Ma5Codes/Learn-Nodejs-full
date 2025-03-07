@@ -1,0 +1,16 @@
+{
+  "name": "package-manager",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "ma5Codes",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
