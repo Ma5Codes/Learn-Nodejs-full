@@ -16,6 +16,8 @@ app.get("/user/:id", (req, res) => {
 app.post("/order", (req, res) => {
   res.send("Order received! 🛒");
 });
+
+//get all  products
 app.get("/set/products",(req, res) => {
     const products = [
         { id: 1, name: "Product 1" },
@@ -23,6 +25,12 @@ app.get("/set/products",(req, res) => {
         { id: 3, name: "Product 3" },
     ]
     res.json(products);
+});
+
+//single product
+app.get("/set/product/:id", (req, res) => {
+    const product = { id: req.params.id, name: "Product 1" };
+    res.json(product);
 });
 
 // Start the city (server)
